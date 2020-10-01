@@ -1,37 +1,57 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<style>
-body{ background-color:white;}
-h1{ border-style:solid;
- background-color:blue;
-height:50px;}
-p{ font-family:verdana;
-font-size:20px;}
-</style>
-<body><center><h1><solid>SURVEY FORM</solid></center></h1>
-<center><h2>Let us know how we can improve Freecodecamp</h2></center>
-<form><center>
-NAME<br><input type=text value="Enter your name"></input><br>
-EMAIL<br><input type=text value="enter email id"></input>
-<br>AGE<br><input type="number" value="age" >
-<p>Which option describes best your current role?</p>
-<select>
-<br><option value=Student>Student</option>
-<option value=Employee>Employee</option>
-<option value=other>Other</option></select>
-<p>How likely is that you would recommend freecodecamp to a friend?</p>
-<input type=radio>Definitely<br>
-<input type=radio>May be<br>
-<input type=radio>Not Sure
-<p>Things that should be impoved in the future<br>
-(check all that apply)</br></p><br>
-<input type=checkbox>Frontend Projects
-<input type=checkbox>Backend Projects
-<input type=checkbox>Data Visualisation<br><br>
- <a href="submit.html">Submit</a>
-</form>
-</center>
 
+<head>
+    <style>
+        h1 {
+            border-style: solid;
+            background-color: blue;
+            height: 50px;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 20px;
+        }
+
+        #form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">
+        <solid>SURVEY FORM</solid>
+    </h1>
+    <h2 style="text-align: center;">Let us know how we can improve Freecodecamp</h2>
+    <form id="form">
+        NAME<br><input type=text placeholder="Enter your name"></input><br>
+        EMAIL<br><input type=text placeholder="enter email id"></input>
+        <br>AGE<br><input type="number" placeholder="age">
+        <p>Which option describes best your current role?</p>
+        <select>
+            <br>
+            <option placeholder=""></option>
+            <option placeholder="Student">Student</option>
+            <option placeholder="Employee">Employee</option>
+            <option placeholder="other">Other</option>
+        </select>
+        <p>How likely is that you would recommend freecodecamp to a friend?</p>
+        <input type="radio" class="radio">Definitely<br>
+        <input type="radio" class="radio">May be<br>
+        <input type="radio" class="radio">Not Sure
+        <p>Things that should be impoved in the future<br>
+            (check all that apply)</br></p><br>
+        <input type="checkbox">Frontend Projects
+        <input type="checkbox">Backend Projects
+        <input type="checkbox">Data Visualisation<br><br>
+        <a href="submit.html"><button
+                onclick="alert(`Congratulations Your Form is submitted sucessfully !!!!`)">Submit</button></a>
+    </form>
 </body>
 </html>
